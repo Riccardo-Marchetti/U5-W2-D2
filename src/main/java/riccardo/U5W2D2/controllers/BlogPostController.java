@@ -19,7 +19,7 @@ public class BlogPostController {
     private List<BlogPost> getAllBlog(){
         return blogPostService.getBlogPostsList();
     }
-    @GetMapping ("/{userId}")
+    @GetMapping ("/{blogId}")
     private BlogPost getBlogPostById(@PathVariable long id){
         return blogPostService.findBlogById(id);
     }
